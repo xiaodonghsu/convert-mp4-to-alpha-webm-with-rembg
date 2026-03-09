@@ -58,3 +58,9 @@ Make sure these commands work before running the app:
 ffmpeg -version
 ffprobe -version
 ```
+
+## package to .exe
+
+```powershell
+uv run pyinstaller --onefile --icon favicon.ico --name mp4-to-webm-with-alpha-channel main.py
+```
