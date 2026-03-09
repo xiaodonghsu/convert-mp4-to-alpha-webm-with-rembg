@@ -1,0 +1,16 @@
+[project]
+name = "convert-mp4-to-webm-rembg-python"
+version = "0.1.0"
+description = "Desktop app that removes MP4 backgrounds with rembg CPU and exports transparent WebM."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pyinstaller>=6.19.0",
+    "rembg[cpu]>=2.0.67",
+]
+
+[project.scripts]
+convert-webm-rembg = "video_webm_app.main:main"
+
+[tool.uv]
+package = true
